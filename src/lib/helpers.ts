@@ -15,18 +15,18 @@ export function getCurrentTimeInItaly(): Date {
 
 export function formatTimeForItaly(date: Date): string {
   const options: Intl.DateTimeFormatOptions = {
-    hour: "numeric",
+    hour: "2-digit",
     minute: "2-digit",
     second: "2-digit",
-    hour12: true, // This will format the time in 12-hour format with AM/PM
-    timeZone: "Europe/Rome",
+    hour12: false, // This will format the time in 12-hour format with AM/PM
+    timeZone: "Asia/Jakarta",
   };
 
   let formattedTime = new Intl.DateTimeFormat("en-US", options).format(date);
 
   // Append the time zone abbreviation. You can automate this with libraries like `moment-timezone`.
   // For simplicity, here I'm just appending "CET", but do remember that Italy switches between CET and CEST.
-  formattedTime += " CET";
+  formattedTime += " WIB";
 
   return formattedTime;
 }

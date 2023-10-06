@@ -9,14 +9,14 @@ function Tooltip(props: Props) {
   const [clickCount, setClickCount] = createSignal(0);
 
   const messages = [
-    "Hi there!",
-    "Clicked again?",
-    "Still here?",
-    "Persistent, aren't you?",
-    "What's up?",
-    "Again? Really?",
-    "You're curious!",
-    "Not cool!",
+    "You've unlocked the secret frequency!",
+    "Congratulations, persistent explorer!",
+    "You've just taken a step closer to unraveling the enigma.",
+    "The button acknowledges your curiosity.",
+    "Mysterious energies are at play.",
+    "You're treading on the path of the unknown.",
+    "The secret lies in persistence.",
+    "You're dancing on the edge of discovery. ",
     "Give it a break!",
     "That's annoying!",
     "Hands off!",
